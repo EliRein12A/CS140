@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(163, 179, 193);
+}
+
+main {
+    color: rgb(0, 54, 47);
+}
+
+
+nav {
+    color: rgb(3, 21, 61);
+}
+
+header {
+    color: rgb(10, 87, 157);
+}
+
+h4 {
+    color: rgb(10, 87, 157);
+}
+
+h2 {
+    color: rgb(10, 87, 157);
+}
+
+footer {
+    color: rgb(14, 108, 95);
+}
+
+dt {
+    color: rgb(10, 87, 157);
+}
+
+#italic-text {
+    font-style: italic;
+}
+
+.bold-text {
+    font-weight: 500;
+    font-weight: bold;
+}
