@@ -8,7 +8,7 @@ main {
     background-image: url(redFlowerSmall.png);
     background-repeat: no-repeat;
     background-position: right;
-}
+} 
 
 pipeline {
     width: 250;
