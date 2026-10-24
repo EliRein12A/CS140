@@ -1,0 +1,67 @@
+header {
+    background-color: rgb(20, 72, 54);
+    width: 100%;
+    padding: 20px;
+    color: white;
+}
+
+h1 { 
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(219, 230, 193);
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+}
+
+.layout-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.side {
+    flex: 0, 0;
+    padding: 10px;
+    width: 5%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr, 1fr;
+    gap: 10px;
+}
+
+.images {
+    border-radius: 2px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-wrap: calc(); 
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+.parent4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 4, 1fr;
+    gap: 5px;
+}
+
+.links {
+    display: block;
+    justify-content: space-around;
+    margin: auto;
+    padding-bottom: 5%;
+}
