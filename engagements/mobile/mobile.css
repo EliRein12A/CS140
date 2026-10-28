@@ -27,7 +27,15 @@ nav a {
     padding: 5px 20px;
     background-color: rgb(72, 72, 80);
     color: white;
+    text-decoration: none;
 }
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: rgb(166, 187, 166); 
+}
+
 
 .main-row {
     display: flex;
@@ -70,6 +78,35 @@ main {
     margin: 0 auto 5px auto;
     border-radius: 5px;
     color: aliceblue;
+}
+
+@media ONLY screen AND (max-width: 680px) {
+    .main-row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .sidebar {
+        width: 100px;
+    }
+
+    main {
+        width: 100px;
+    }
+
+    .card {
+        width: 95px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: 1px solid white;
+        padding: 15px 10px;
+    }
 }
 
 @media print {
