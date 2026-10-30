@@ -1,0 +1,125 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f1f3dd;
+}
+
+header {
+    background-color: rgb(135, 233, 176);
+}
+
+/*this is for the title making it look solid and whatnot*/
+header h1 {
+    margin: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(200, 173, 127);
+}
+
+nav a {
+    display: block;
+    padding: 5px 25px;
+    background-color: rgb(229, 235, 229);
+    color: rgb(9, 0, 0);
+    font-style: italic;
+}
+
+nav a:hover {
+    background-color: rgb(227, 233, 161);
+}
+
+/* the-main is what allows the sidebar to be next to the main content in the middle */
+.the-main {
+    display: flex;
+    gap: 20px;
+}
+
+/* this manages how much space is shared with the main width too*/
+.sidebar {
+    width: 25%;
+}
+
+/* everything within the main is affected by this so it should push everything at 75% for sharing the screen with the width of the sidebar*/
+main {
+    width: 75%;
+}
+
+/* .anniversary is for the side bar picture*/ 
+.anniversary figure {
+    margin: auto;
+}
+
+.anniversary img {
+    width: 100%;
+}
+
+/*figcaption is for the anniversary caption image */
+figcaption {
+    font-weight: 100px;
+    font-style: italic;
+    align-items: center;
+}
+
+/*this handles the list on the sidebar*/
+ul { 
+   display: grid;
+   gap: 8px;
+   margin-left: -30px;
+   padding-right: 30px;
+}
+
+.names {
+    margin-bottom: 1px;
+}
+
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/*this is for the articles*/
+.card {
+    border: 0.5px solid rgb(244, 244, 244);
+    border-radius: 5px;
+    width: 280px;
+    box-shadow: 0px 1px 1.2px 0.5px; 
+}
+
+.card img {
+    width: 100%;
+}
+
+@media ONLY screen AND (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    .the-main {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 86%;
+    }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+}
