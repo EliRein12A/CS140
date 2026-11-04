@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Eli's Website</h1>
+        <h1>Tables</h1>
     </header>
     <nav>
         <a href="#">Home</a>
@@ -16,8 +16,10 @@
         <a href="#">Tables</a>
     </nav>
     <main>
-        <table border="1">
-            <tbody>
+        <div>
+        <table id="schedule">
+            <caption>My Class Schedule</caption>
+        <tbody>
         <tr>
             <th scope="rowgroup" colspan="6">Fall 2026</th>
         </tr>
@@ -123,9 +125,13 @@
                         Did AI ever try to give you more than you asked for, like writing your code? What did you do?
                         Honestly no, it did give some examples that were helpful but overall this AI was pretty good. 
                     </p>
+                    <p>
+                        The border line between the cells shrunk into only one cells. The double lines came back after using separate. Border spacing changed how much space there is between the titles and everything inside it. Border spacing doesn't do anything with collapse on. My caption moved all the way to the bottom. Top is easier to read. 
+                    </p>
                 </tr>
             </tfoot>
         </table>
+    </div>
     </main>
     <footer>&copy; 2026 Eli Reinhardt </footer>
 </body>
