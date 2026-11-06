@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+header {
+    color: aliceblue;
+    background-color: rgb(200, 16, 46);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(34, 34, 81);
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    background-color: beige;
+    font-style: italic;
+}
+
+nav a:hover {
+    background-color: rgb(236, 236, 219);
+}
+
+.mainarea {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%;
+    position: fixed;
+    right: 0;
+    padding: 20px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    border: black solid 2px;
+}
+
+.tablediv {
+    overflow-x: auto;
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#data {
+    /*border: 1px solid black;*/
+    margin: 20px;
+}
+
+#data td {
+    border: 1px solid black;
+}
+
+#data th{
+    background-color: rgb(102, 179, 247);
+    font-style: oblique;
+    border: 2px solid black;
+}
+
+#data tbody tr:nth-child(2) {
+    background-color: rgb(255, 199, 44);
+}
+
+#data tbody tr:nth-child(4) {
+    background-color: rgb(29, 66, 138);
+    color: azure;
+}
+
+#data tbody tr:nth-child(6) {
+    background-color: aliceblue;
+}
+
+@media ONLY screen AND (max-width: 700px) {
+    main {
+        width: 80%;
+    }
+
+    .sidebar {
+        width: 85%;
+    }
+}
