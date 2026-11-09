@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli's Website</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Eli's Form</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="get">
+            <div class="form-row">
+            <label for="personname">Full Name</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" type="text" name="email">
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="pass">
+            </div>
+                <label for="state">Choose your state</label>
+                <select id="state" name="state">
+                    <option value="">Choose an option</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="kansas">Kansas</option>
+                    <option value="california">California</option>
+                </select>
+            <div>
+                <input type="radio" id="place" name="places" value="place" checked>
+                    <label for="place">Place how to get there</label>
+                </div>
+            <div>
+                <input type="radio" id="stuff" name="places" value="stuff">
+                    <label for="place">Where are you?</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pepperoni" name="food" value="pepperoni">
+                    <label for="pepperoni">This pizza</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cheese" name="food" value="cheese">
+                    <label for="cheese">Other pizza</label>
+            </div>
+            <label for="long-message">This is the message I want to share</label>
+            <textarea name="long" id="long-message" rows="10" cols="20" placeholder="enter your message"></textarea>
+            <div class="form-row">
+                <input type="url" name="Website" placeholder="https://www.youtube.com/watch?v=Zv6xuy1xP1s">
+                <input type="submit">
+            </div>
+        </form>
+        <p>
+            The form tag has an "action" attribute. What does it do?
+            The action tag tells you where the information that is submitted should be sent.
+            The form tag has a "method" attribute. What does it do?
+            The get tag is used to retrieve information from a form.
+            What is the difference between a "POST" and a "GET"?
+            Get puts the data in the URL and the POST sends the data in a different way. If we're changing and adding new information we should be using a post. 
+            How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button.
+            You can fill in a form control with a pre-set value by choosing it to be a text and using a value tag to make it editable. This is different from a placeholder because placeholders can be used as guidance from the background. Checkboxes do not support placeholders. Select boxes creates a box that can't be selected with an empty value. Radio buttons are different because it allows you to select a single choice from a group. Text-area is used to collect user input. The textbox similarily is an element that you can type and interact with.
+            List all the form controls that HTML5 added. Which ones did you put in your form?
+            HTML5 added datalist, output, meter, and progress. 
+            What does the browser give you that a plain text box does not?
+            It gives you the youtube link already placed within the box without having to input anything inside the box manually. 
+</p>
+    </main>
+    <footer>&copy; 2026 Eli Reinhardt</footer>
+</body>
+</html>
