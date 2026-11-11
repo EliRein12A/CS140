@@ -12,6 +12,8 @@
     </header>
     <main>
         <form action="formprocessing.html" method="get">
+        <fieldset>
+            <legend>Account Information</legend>
             <div class="form-row">
             <label for="personname">Full Name</label>
                 <input id="personname" type="text" name="fullname" placeholder="Full Name">
@@ -21,6 +23,7 @@
                 <input id="email" type="text" name="email">
             </div>
             <div class="form-row">
+                <div class="spacer"></div>
                 <label for="password">Password</label>
                 <input id="password" type="password" name="pass">
             </div>
@@ -31,28 +34,30 @@
                     <option value="kansas">Kansas</option>
                     <option value="california">California</option>
                 </select>
-            <div>
+            <div class="form-row">
                 <input type="radio" id="place" name="places" value="place" checked>
                     <label for="place">Place how to get there</label>
                 </div>
-            <div>
+            <div class="form-row">
                 <input type="radio" id="stuff" name="places" value="stuff">
                     <label for="place">Where are you?</label>
             </div>
-            <div>
+            <div class="check-row">
                 <input type="checkbox" id="pepperoni" name="food" value="pepperoni">
                     <label for="pepperoni">This pizza</label>
             </div>
-            <div>
+            <div class="form-row">
+                <div class="spacer">Gender</div>
                 <input type="checkbox" id="cheese" name="food" value="cheese">
                     <label for="cheese">Other pizza</label>
             </div>
             <label for="long-message">This is the message I want to share</label>
-            <textarea name="long" id="long-message" rows="10" cols="20" placeholder="enter your message"></textarea>
+            <textarea name="long" id="long-message" rows="10" cols="10" placeholder="enter your message"></textarea>
             <div class="form-row">
                 <input type="url" name="Website" placeholder="https://www.youtube.com/watch?v=Zv6xuy1xP1s">
                 <input type="submit">
             </div>
+            </fieldset>
         </form>
         <p>
             The form tag has an "action" attribute. What does it do?
@@ -67,7 +72,15 @@
             HTML5 added datalist, output, meter, and progress. 
             What does the browser give you that a plain text box does not?
             It gives you the youtube link already placed within the box without having to input anything inside the box manually. 
-</p>
+        </p>
+        <p>
+            What are different ways to style your form?
+            You can style your form by spacing out text, increasing width, and using text-align to make the site look more appealing. 
+            Why does the professor like to use flex?
+            Profressor Slade likes to use flex because it allows for more innovation and is as it says a lot more flexible to use than grid. You don't have to use other technical code such as float or grid when flex is easier to use for positioning. 
+            What makes for a good mobile form?
+            Easily accessible options/buttons for you to press so that you get what you want and it looks nice vertically on your phone. 
+        </p>
     </main>
     <footer>&copy; 2026 Eli Reinhardt</footer>
 </body>

@@ -1,3 +1,49 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+fieldset {
+    background-color: bisque;
+    border: thin solid black 1px;
+    box-shadow: 1px 2px 2px;
+}
+
+.form-row input {
+    padding: 5px;
+    background-color: rgb(232, 247, 247);
+}
+
+.form-row {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row :hover {
+    background-color: aliceblue;
+}
+
+.form-row input:not(type="submit") {
+    padding: 10px;
+    background-color: white;
+    color: rgb(4, 0, 0);
+}
+
+.spacer {
+    width: 150px;
+}
+
+@media ONLY screen AND (max-width: 500px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+}
