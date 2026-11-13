@@ -1,3 +1,81 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: azure;
+}
+
+header {
+    background-color: rgb(192, 192, 192);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(54, 69, 79);
+}
+
+nav a {
+    display: block;
+    padding: 5px 5px;
+    background-color: rgb(214, 233, 152);
+}
+
+nav a:hover {
+    background-color: navy;
+    color: white;
+}
+
+.og-row, .fix-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.og-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.correct {
+    width: 150px;
+    text-align: right;
+}
+
+
+input[type='submit'] {
+    background-color: rgb(216, 173, 173);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+legend {
+    padding: 5px;
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 5px;
+    background-color: beige;
+    border-radius: 15px;
+}
+
+@media ONLY screen AND (max-width: 500px) {
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .og-row, .fix-row {
+        flex-direction: column;
+    }
+
+    .og-row label {
+        text-align: left;
+    }
+
+    .correct {
+        text-align: left;
+    }
 }

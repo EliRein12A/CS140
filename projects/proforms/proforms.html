@@ -14,6 +14,57 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Other Forms</a>
+        <a href="#">Send Report</a>
+        <a href="#">Refund</a>
     </nav>
+    <main>
+        <h2>Taxes Login Account</h2>
+        <form action="formprocessing.html" method="get">
+            <div class="og-row">
+                <label for="entername">Account Name:</label>
+                <input id="entername" type="text" name="fullname" placeholder="Enter name">
+            </div>
+            <div class="og-row">
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="Enter password">
+            </div>
+            <div class="og-row">
+                <label for="comment">Depositing For:</label>
+                <textarea name="comment" id="comment" placeholder="Reason for deposit?"></textarea>
+            </div>
+            <fieldset>
+                <legend>Send It</legend>
+                <div class="fix-row">
+                    <div class="correct">Account Access:</div>
+                    <label><input id="radio" type="radio" name="money" value="checking">Checking</label>
+                    <label><input id="radio2" type="radio" name="money" value="savings">Savings</label>
+                </div>
+                <div class="fix-row">
+                    <div class="correct"></div>
+                    <label for="money">Money:</label>
+                    <select name="number" id="money">
+                        <option value="100">$100</option>
+                        <option value="50">$50</option>
+                        <option value="10">$10</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="og-row">
+                <label for="phone-number">Phone Number:</label>
+                <input type="number" name="phone" id="phone-number">
+            </div>
+            <div class="og-row">
+                <label for="date">Date Deposited:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="og-row">
+                <label><input type="checkbox" id="human" name="yes" value="human"> I am not a robot</label>
+            </div>
+            <div class="og-row">
+                <div class="correct"></div>
+                <input type="submit" value="Turn In">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
