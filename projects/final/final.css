@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+header {
+    background-color: rgb(102, 205, 170);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 119, 190);
+}
+
+nav a {
+    display: block;
+    padding: 10px 10px;
+    background-color: rgb(124, 179, 241);
+}
+
+nav a:hover {
+    background-color: rgb(190, 99, 190);
+}

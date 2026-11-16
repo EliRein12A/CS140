@@ -83,7 +83,49 @@
             What makes for a good mobile form?
             Easily accessible options/buttons for you to press so that you get what you want and it looks nice vertically on your phone. 
         </p>
+        <p>
+        What is JavaScript? How did it get its name?
+        JavaScript is a programming language that was owned by subsys microsystems which doesnt exist anymore. 
+        What are the two ways you can run JavaScript?
+        You can run JavaScript by using 1 JS in a browser or DOM. You could also run it using node js which is the most popular. 
+        What is jQuery? Is it still popular today?
+        jQuery is used to simplify web pages. It's a part of javaScript and is fast and it is still popular today.
+        What is the most popular front-end js library today?
+        The most popular front-end js library today is React. 
+        How does your code prevent the form from being submitted? Why do we need to prevent it?
+        The code prevents the form from being submitted because the form itself is used on Github and is not being sent anywhere. We need to prevent it from being sent out because it is a free site that doesn't operate websites for money only for non-profit. 
+        </p>
     </main>
     <footer>&copy; 2026 Eli Reinhardt</footer>
 </body>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) ) {
+            event.preventDefault();
+            alert("Form Submitted");
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value
+            const password = document.getElementById('password').value
+            const age = document.getElementById('state').value;
+
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            if (!age || age <18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+
+            };
+
+            console.log(formData);
+        });
+    </script>
 </html>
