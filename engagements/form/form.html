@@ -11,7 +11,8 @@
         <h1>Eli's Form</h1>
     </header>
     <main>
-        <form action="formprocessing.html" method="get">
+        <form action="formprocessing.html" method="get" id="myForm"> 
+        <div id="message">
         <fieldset>
             <legend>Account Information</legend>
             <div class="form-row">
@@ -95,26 +96,31 @@
         How does your code prevent the form from being submitted? Why do we need to prevent it?
         The code prevents the form from being submitted because the form itself is used on Github and is not being sent anywhere. We need to prevent it from being sent out because it is a free site that doesn't operate websites for money only for non-profit. 
         </p>
+        <p>
+            What is AJAX?
+            AJAX is Asynchronous Javascript and XML. AJAX is going over the network and getting data down to update webpages with new data. It does it all over the web. 
+            Why do you put your JS Code in a separate file?
+            You need to put your JS Code in a seperate file because it will display a message that works with your submission. 
+            How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?
+            By inspecting your Javascript using the inspector you can see what errors are popping up at the bottom of the screen that will tell you what is not working. Using AI can also help you get suggestions on how to fix them. The inspector at the bottom will specify in red what the error is. 
+            Do your form and fields have the same ids that your JavaScript uses? Does the Console show any errors? List your ids, and fix any errors before you submit.
+            My form and fields now have the same ids that JavaScript uses. In the previous assignment I did not have them correct but they should be solid now. 
+        </p>
+    </div>
     </main>
     <footer>&copy; 2026 Eli Reinhardt</footer>
-</body>
+    </body>
     <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) ) {
+        document.getElementById('myForm').addEventListener('submit',function(event) {
             event.preventDefault();
             alert("Form Submitted");
 
-            const fullname = document.getElementById('fullname').value;
+            const fullname = document.getElementById('personname').value;
             const email = document.getElementById('email').value
             const password = document.getElementById('password').value
-            const age = document.getElementById('state').value;
 
             if (!fullname || !email) {
                 alert("You need a name and email.");
-                return;
-            }
-
-            if (!age || age <18) {
-                alert("You need to be 18");
                 return;
             }
 
@@ -124,8 +130,24 @@
                 password: password,
 
             };
-
             console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    
+                    message = document.getElementById('message');
+                    const response = JSON.parse(xhr.responseText);
+                    message.textContent = response.message;
+                    form = document.getElementById('myForm');
+                    form.reset();
+                }   else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                }
+            };
+            xhr.send(JSON.stringify(formData));
+            alert('Success: ${firstName} ${lastName}');
         });
     </script>
 </html>
