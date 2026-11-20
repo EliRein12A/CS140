@@ -24,8 +24,8 @@ document.getElementById('theForm').addEventListener("submit", function(event) {
         password: password,
         comment: comment,
         phone: phone
-
     };
+
 
     console.log(formData);
     const xhr = new XMLHttpRequest();
