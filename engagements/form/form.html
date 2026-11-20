@@ -140,7 +140,7 @@
                     message = document.getElementById('message');
                     const response = JSON.parse(xhr.responseText);
                     message.textContent = response.message;
-                    form = document.getElementById('myForm');
+                    const form = document.getElementById('myForm');
                     form.reset();
                 }   else if (xhr.readyState === 4) {
                     alert('Error submitting form.');
