@@ -26,3 +26,14 @@ nav a {
 nav a:hover {
     background-color: rgb(190, 99, 190);
 }
+
+.current {
+    color: black;
+    background-color: aliceblue;
+}
+
+@media ONLY screen AND (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+}
