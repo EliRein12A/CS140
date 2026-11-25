@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Favorite Board Games</h1>
+        <h1>Popular Board Games</h1>
     </header>
     <nav>
         <a href="final.html">Home</a>
@@ -18,6 +18,58 @@
         <a href="history.html">History</a>
         <a href="design.html">Design</a>
     </nav>
-    
+    <main>
+        <h1>Popularity</h1>
+        <p>There are so many different board games out there and it has been debated throughout the history of time which is the most popular. According to Brandon Rollins, author of The 10 Most Popular Board Games and How They Made Gaming Better article, "The best-selling game of all-time is Chess. It's for great reasons too. Chess has variable player powers, a sophisticated area control foundation, and endless possibilities of play. While Chess may be the current #1 in terms of popularity, I want to know what your favorite game is and why?"</p>
+        <h2>Favorite Board Game</h2>
+        <form action="formprocessing.html" method="get" id="fi-form">
+            <div id="pop-up">
+                <div class="fi-row">
+                    <label for="fullname">Your Name:</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                <div class="fi-row">
+                    <label for="cel-phone">Phone Number:</label>
+                    <input type="tel" name="cel-phone" id="cel-phone">
+                </div>
+                <div class="fi-row">
+                    <label for="your-game">Favorite Game:</label>
+                    <textarea name="your-game" id="your-game" placeholder="Please enter your game"></textarea>
+                </div>
+                <div class="adj-row">
+                    <div class="accurate">Favorite Type of Game:</div>
+                    <label><input id="radio" type="radio" name="type-og" value="strategy">Strategy</label>
+                    <label><input id="radio2" type="radio" name="type-og" value="deck-building">Deck-Building</label>
+                    <label><input id="radio3" type="radio" name="type-og" value="co-op">Co-op</label>
+                    <label><input id="radio4" type="radio" name="type-og" value="racing">Racing</label>
+                    <label><input id="radio5" type="radio" name="type-og" value="party">Party</label>
+                </div>
+                <div class="fi-row">
+                    <div class="accurate"></div>
+                    Age Started: <input type="number" name="age" id="age"> 
+                </div>
+                <div class="adj-row">
+                    <div class="accurate"></div>
+                    <label for="make-game">Would you ever consider making a board game?</label>
+                    <select name="make-game" id="make-game">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="fi-row">
+                    <div class="accurate">Gender:</div>
+                    <label><input id="radiop1" type="radio" name="type-og" value="male">Male</label>
+                    <label><input id="radiop2" type="radio" name="type-og" value="female">Female</label>
+                </div>
+                <div class="fi-row">
+                    <div class="accurate"></div>
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+        <p>This is a form based for you to tell us what your favorite board game is! Submit your information so that my friend Keli'i can get hook you up with some board games when he eventually takes over the board game club!
+        </p>
+    </main>
+    <footer>&copy; 2026 Eli Reinhardt</footer>
 </body>
 </html>

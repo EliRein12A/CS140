@@ -1,10 +1,11 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
+    background-color: rgb(242, 232, 201);
 }
 
 header {
     background-color: rgb(102, 205, 170);
+    color: rgb(232, 227, 227);
 }
 
 header h1 {
@@ -21,6 +22,7 @@ nav a {
     display: block;
     padding: 10px 10px;
     background-color: rgb(124, 179, 241);
+    font-style: oblique;
 }
 
 nav a:hover {
@@ -30,10 +32,81 @@ nav a:hover {
 .current {
     color: black;
     background-color: aliceblue;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+
+.mainbar {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.facts figure {
+    margin: auto;
+}
+
+figcaption {
+    font-weight: 50px;
+    align-items: right;
+    font-style: italic;
+}
+
+ul {
+    display: grid;
+    gap: 12px;
+    margin-left: -30px;
+    margin-right: 30px;
+}
+
+.fi-row, .adj-row {
+    display: flex;
+    gap: 12px;
+    margin: 5px, 0;
+}
+
+.fi-row label {
+    width: 150px;
+    text-align: right;
+}
+
+input[type='submit'] {
+    background-color: rgb(196, 109, 82);
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    background-color: rgb(156, 175, 136);
+    border-radius: 15px;
+}
+
+.accurate {
+    width: 150px;
+    text-align: right;
+}
+
+footer {
+    font-style: italic;
 }
 
 @media ONLY screen AND (max-width: 700px) {
     nav {
         flex-direction: column;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    .mainbar {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 85%;
     }
 }
